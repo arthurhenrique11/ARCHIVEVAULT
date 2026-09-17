@@ -1,0 +1,64 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive Vault - Simular Frete</title>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Envio & Impostos de Importação</h1>
+        <nav>
+            <a href="carrinho.html">Voltar ao Carrinho</a> | 
+            <a href="checkout.html">Ir para Finalização</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Simular Entrega Exclusiva</h2>
+            
+            <form action="checkout.html" method="get">
+                <p>
+                    <label for="marca-origem">Selecione a Marca para Origem do Acervo:</label><br>
+                    <input list="marcas" id="marca-origem" name="marca-origem" placeholder="Busque a marca..." required>
+                    <datalist id="marcas">
+                        <option value="Rick Owens (Acervo Paris)">
+                        <option value="Maison Margiela (Acervo Bruxelas)">
+                        <option value="Balenciaga (Acervo Zurique)">
+                        <option value="Philipp Plein (Acervo Milão)">
+                        <option value="Dior Archives (Acervo Paris)">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="seguro">Prioridade do Frete com Seguro Total (1 a 10):</label><br>
+                    <input type="range" id="seguro" name="seguro" min="1" max="10">
+                </p>
+
+                <p>
+                    <label for="cep">CEP / Código Postal:</label><br>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                </p>
+
+             <a href="finalizar-compra.html">Finalizar Compra</a>
+            </form>
+            </form>
+            <section>
+
+            </section>
+
+            <details>
+                <summary>Ver Detalhamento das Taxas Adicionais</summary>
+                <p>Devido ao alto valor declaratório das peças de acervo, são aplicadas:</p>
+                <ul>
+                    <li>Taxa de Manuseio Blindado: R$ 450,00</li>
+                    <li>Imposto Transitório Internacional: R$ 890,00</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>Archive Vault &copy; 2026</p>
+    </footer>
+</body>
+</html>

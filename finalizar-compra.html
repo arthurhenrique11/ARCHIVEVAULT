@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive Vault - Finalizar Pedido</title>
+</head>
+<body>
+    <header>
+        <h1>Finalização de Aquisição</h1>
+        <nav><a href="frete.html">Voltar ao Frete</a></nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Confirmação de Dados e Envio</h2>
+            <form action="inicio.html" method="get">
+                <p>
+                    <label for="nome-completo">Nome Completo do Titular:</label><br>
+                    <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite seu nome" required>
+                </p>
+                <p>
+                    <label for="metodo">Forma de Pagamento:</label><br>
+                    <select id="metodo" name="metodo" required>
+                        <option value="pix">PIX Instantâneo (5% Off)</option>
+                        <option value="cartao">Cartão de Crédito em até 12x</option>
+                        <option value="crypto">Bitcoin / Ethereum</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Concluir Compra Segura</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Archive Vault &copy; 2026</p>
+    </footer>
+</body>
+</html>
